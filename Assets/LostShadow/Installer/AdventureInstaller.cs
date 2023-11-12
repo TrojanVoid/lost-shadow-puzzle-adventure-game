@@ -1,4 +1,5 @@
 using Zenject;
+using LostShadow.Feature.AdventureScene.AdventureStage.Controller;
 
 namespace LostShadow.Installer
 {
@@ -6,6 +7,7 @@ namespace LostShadow.Installer
     {
         public override void InstallBindings()
         {
+            Container.Bind<AdventureStageController>().AsSingle().NonLazy();
         }
     }
 }
