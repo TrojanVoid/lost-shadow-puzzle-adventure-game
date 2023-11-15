@@ -8,6 +8,7 @@ namespace LostShadow.Installer
         public override void InstallBindings()
         {
             Container.Bind<AdventureStageController>().AsSingle().NonLazy();
+               
         }
     }
 }
